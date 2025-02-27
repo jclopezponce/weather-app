@@ -3,6 +3,7 @@ import Autocomplete  from "react-google-autocomplete";
 import axios from 'axios';
 import SearchIcon from '@mui/icons-material/Search';
 import weatherInterp from "../weatherCode";
+import Button from '@mui/material/Button';
 
 
 export default function Direction(props) {  
@@ -60,13 +61,14 @@ function addTemp(){
  return (
   <div className="searcher">
     <Autocomplete
+    required
     apiKey={apiKey}
     onPlaceSelected={getDirection}
     onFocus={e => e.target.select()}
     placeholder="SEARCH"
     />
 
-    <button onClick={addTemp}><SearchIcon /></button>
+    <Button variant="contained" style={{backgroundColor: "#A3D1C6"}}onClick={addTemp}><SearchIcon/></Button>
     </div>
  )
 

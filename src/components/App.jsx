@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Direction from './Direction';
 import WeatherCard from './WeatherCard';
+import Header from './Header';
 
 
 
@@ -14,6 +15,8 @@ export default function App() {
   
 
   return (
+    <div>
+    <Header/>
     <div className='carta'>
   <Direction onAdd={addWeather} />
   {currentWeather.map((weatherItem, index)=>(
@@ -28,6 +31,7 @@ export default function App() {
   description={weatherItem.description}/> 
   ))
 }
+   </div>
    </div>
   )
 }
