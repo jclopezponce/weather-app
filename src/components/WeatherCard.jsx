@@ -20,15 +20,15 @@ export default function WeatherCard(props) {
         <Container>
       <Row className="weather-options">
         <Col xs={6} md={4}>
-          <Image src="/icons/humidity.png"  style={{width : '30px'}} rounded />
+          <Image src="icons/humidity.png"  style={{width : '30px'}} rounded />
           <p>{props.humidity} %</p>
         </Col>
         <Col xs={6} md={4}>
-          <Image src="/icons/weather.png" style={{width : '30px'}} rounded />
+          <Image src="icons/weather.png" style={{width : '30px'}} rounded />
           <p>{props.precipitation} %</p>
         </Col>
         <Col xs={6} md={4}>
-          <Image src="/icons/wind.png" style={{width : '30px'}} rounded />
+          <Image src="icons/wind.png" style={{width : '30px'}} rounded />
           <p>{props.wind} Km/h</p>
         </Col>
       </Row>
